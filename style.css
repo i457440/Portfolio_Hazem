@@ -225,3 +225,19 @@ section .title::before{
     background: #0078ff;
     transform: translateX(-50%);
 }
+
+/* footer */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+footer span a{
+    color: #0078ff;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
