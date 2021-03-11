@@ -17,7 +17,7 @@ section{
 }
 .max-width{
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 90px;
     margin:auto;
 }
 
@@ -28,7 +28,11 @@ section{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul li a.active {
+     color: black !important;
 }
 
 .navbar.sticky{
@@ -116,24 +120,108 @@ section{
 /* Hazem Ben Rouba titel*/
 .home{
     display: flex;
-    background: url("hazem.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
-    background-size: auto;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: .8;
+    
+    
+   
+    
+}
+.home::before{
+    content: "";
+      background: url('hazem.jpg') no-repeat center;
+      background-size: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
 }
 
 home-content {
     align-content: center;
 }
 
-.text-2{
-    font-size: 100px;
+h1{
+    font-size: 150px;
+    font-family: 'Oswald', sans-serif;
     font-weight: 600;
     text-align: center;
     text-shadow: -4px -4px #000000;
+    position: relative;
+    color: #ffffff;  
+    
 }
 
+/* Over mij */
 
+.about .about-content .left{
+    width: 45%;;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: #0078ff;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #0078ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #0078ff;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: #0078ff;
+    background: none;
+}
+
+.about{
+    font-family: 'Oswald', sans-serif;
+}
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #0078ff;
+    transform: translateX(-50%);
+}
