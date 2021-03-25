@@ -79,7 +79,7 @@ ul li a.active {
   }
   
   .dropdown .dropbtn {
-    font-size: 20px;  
+    font-size: 22px;  
     border: none;
     outline: none;
     color: white;
@@ -129,7 +129,7 @@ ul li a.active {
 }
 .home::before{
     content: "";
-      background: url('hazem.jpg') no-repeat center;
+      background: url('/Afb/hazem.jpg') no-repeat center;
       background-size: auto;
       background-color: rgba(0, 0, 0, 0.6);
       position: absolute;
