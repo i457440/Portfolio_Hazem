@@ -1,5 +1,7 @@
 body{
     background-color: rgb(245, 245, 245);
+    
+    
 }
 
 *{
@@ -76,7 +78,7 @@ ul li a.active {
   }
   
   .dropdown .dropbtn {
-    font-size: 20px;  
+    font-size: 22px;  
     border: none;
     outline: none;
     color: white;
@@ -112,6 +114,68 @@ ul li a.active {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /* Project */
+  
+  .title {
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+ .title_container {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+.box{
+    padding:20px;  
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    margin: -60px 100px;
+}
+
+.boxFlex{
+    flex-direction: row;
+    display: flex;
+    margin: 30px;
+    
+}
+
+
+.box .imgBox img{
+    width: 500px;
+    
+}
+
+.box .content h2{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    padding:7px;
+}
+
+.box .content{
+    padding-left: 20px;
+    margin: 2%;
+}
+
+.box .content p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
 
 
 
