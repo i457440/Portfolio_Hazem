@@ -17,10 +17,12 @@
             }else{
                 $('.navbar').removeClass("sticky");
             }
+
             
         });
         
+        AOS.init();
     });
 
-    AOS.init();
+    
     
