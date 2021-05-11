@@ -168,13 +168,13 @@ ul li a.active {
 #projects .project-info h1 {
 	font-size: 3rem;
 	font-weight: 500;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 #projects .project-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 #projects .project-info p {
 	color: white;

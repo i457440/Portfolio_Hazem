@@ -155,13 +155,14 @@ ul li a.active {
 
 .box .imgBox img{
     width: 500px;
+    border-radius: 5px
     
 }
 
 .box .content h2{
     text-align: center;
     font-size: 22px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding:7px;
 }
 
