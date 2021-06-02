@@ -6,11 +6,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/Projecten.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery.lettering.js"></script>
+   
+    <script src="/js/main.js"></script>
+    <script src="/js/text.js"></script>
+    <link rel="stylesheet" href="/CSS/animate.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.js" integrity="sha512-W34u50glG4BGJQE61qQBXoc10jT2+Ur0HTWV5/BmEPJnf6TMsnTT/5daQKXkay+uPxv86a2S42Pl4aDdnkE5mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <title>Advanced Development - Hazem Ben Rouba</title>
+    <link rel="shortcut icon" type="image/jpg" href="/Afb/favicon.png"/>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Portfolio Website</title>
-    <link rel="shortcut icon" type="image/jpg" href="/Afb/favicon.png"/>
+   
+    
+
+   
 </head>
 <body>
 
@@ -32,50 +48,114 @@
                           <a href="/ProfessionalIdentity.html">Professional Identity</a>
                         </div>
                       </div> 
-                    
+                    <li><a href="/index.html#about" class="menu-btn">Over mij</a></li>
                 </ul>
             </div>
         </nav>
 
+
+        <div class="title_container">
+            <h1 class="title">Advanced Development</span></h1>
+          </div>
+        </div> 
       
+        <div class="box">
 
+            <div class="boxFlex">
+                <div class="content1">
+                    <p>
+                        Voor de specialisatie advanced development heb ik eerst naar 10 libraries gezocht en 
+                        daarvan 3 uitgewerkt. Dit heb ik gedaan met HTML, CSS, Javascript en Jquery.
+                        Met dit project kan ik ook mijn leeruitkomst development aantonen.
+                      
+                    </p>          
+                </div>
+                </div>
 
+            <div class="boxFlex">
+                <div class="imgBox">
+                    <img src="/Afb/vue.gif">
+                         
+                </div>
 
+                
+                <div class="content">
+                    <h2>Vue.js</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.
+                    </p> 
+                    <a href="https://github.com/i457440/Vue.js">Ga naar GITHUB<i class="fa fa-fw fa-arrow-right"></i></a>
+                        <a href="/Projecten/Vue.js/Scroll Fullpage.html">Ga naar DEMO<i class="fa fa-fw fa-arrow-right"></i></a>  
 
+                </div>
+                </div>
 
-
-
-
-
-
-
-
+                <div class="boxFlex">
+                    <div class="imgBox">
+                        <img src="/Afb/pixi.gif">
+                             
+                    </div>
     
+                    
+                    <div class="content">
+                        <h2>Pixi.js</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.
+                        </p> 
+                        <a href="https://github.com/i457440/Pixi.js">Ga naar GITHUB<i class="fa fa-fw fa-arrow-right"></i></a>
+                            <a href="/Projecten/Pixi.js/index.html">Ga naar DEMO<i class="fa fa-fw fa-arrow-right"></i></a>    
     
-    <script>
+                    </div>
+                    </div>
 
-        const currentLocation = location.href;
-        const menuItem = document.querySelectorAll('a');
-        const menuLength = menuItem.length
-        for(let i = 0; i<menuLength; i++ ){
-            if(menuItem[i].href === currentLocation){
-                menuItem[i].className = "active"
-            }
-        }
 
-        $(document).ready(function(){
-        $(window).scroll(function(){
-            // sticky navbar on scroll script
-            if(this.scrollY > 20){
-                $('.navbar').addClass("sticky");
-            }else{
-                $('.navbar').removeClass("sticky");
-            }
-            
-        });
-    
-    });
-    </script>
+                    <div class="boxFlex">
+                        <div class="imgBox">
+                            <img src="/Afb/textillate.gif">
+                                 
+                        </div>
+        
+                        
+                        <div class="content">
+                            <h2 class="text">Textillate.js</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.
+                            </p> 
+                            <a href="https://github.com/i457440/Textillate.js">Ga naar GITHUB<i class="fa fa-fw fa-arrow-right"></i></a>
+                            <a href="/Projecten/Textillate.js/index.html">Ga naar DEMO<i class="fa fa-fw fa-arrow-right"></i></a>    
+        
+                        </div>
+                        </div>
+
+                <div class="boxFlex">
+                    
+                    <div class="content">
+                        <h2>Wat heb ik ervan geleerd? </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.
+                        </p> 
+                    </div>
+
+                    <div class="content">
+                        <h2>Hoe maakt mij dat een betere mediadesigner?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.
+                        </p>     
+                    </div>
+                </div>
+        </div>
+
+
 </body>
 
 <footer>
