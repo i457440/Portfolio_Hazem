@@ -51,30 +51,15 @@
 
     
     
-    <script>
-
-        const currentLocation = location.href;
-        const menuItem = document.querySelectorAll('a');
-        const menuLength = menuItem.length
-        for(let i = 0; i<menuLength; i++ ){
-            if(menuItem[i].href === currentLocation){
-                menuItem[i].className = "active"
-            }
-        }
-
-        $(document).ready(function(){
-        $(window).scroll(function(){
-            // sticky navbar on scroll script
-            if(this.scrollY > 20){
-                $('.navbar').addClass("sticky");
-            }else{
-                $('.navbar').removeClass("sticky");
-            }
-            
-        });
-    
-    });
-    </script>
+        <a 
+        action="action"
+        onclick="window.history.go(-1); return false;"
+        type="submit"
+        value="Cancel" id="backUp" href="" style="color: #0078ff;"
+        >
+        
+        <span class="fas fa-arrow-left fa-2x" "></span>
+    </a>
 </body>
 
 <footer>

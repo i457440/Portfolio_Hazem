@@ -209,3 +209,18 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
+/* back page button */
+#backUp{
+    height: 50px;
+    width: 50px;
+    border: 3px solid #0078ff;
+    border-radius: 3px;
+    position: fixed;
+    left: 25px;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
