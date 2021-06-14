@@ -160,10 +160,10 @@ ul li a.active {
 }
 
 .box .content h2{
-    text-align: center;
+    text-align: left;
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
-    padding:7px;
+    margin-bottom: 10px;
 }
 
 .box .content{
@@ -173,8 +173,9 @@ ul li a.active {
 
 .box .content p{
     font-family: 'Poppins', sans-serif;
-    text-align: justify;
+    text-align: left;
     font-size: 18px;
+    line-height: 25px;
 }
 
 .box .content1{
