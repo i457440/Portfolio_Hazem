@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/Projecten.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio Website</title>
+    <link rel="shortcut icon" type="image/jpg" href="/Afb/favicon.png"/>
 </head>
 <body>
 
@@ -31,15 +32,139 @@
                           <a href="/ProfessionalIdentity.html">Professional Identity</a>
                         </div>
                       </div> 
-                    
+                    <li><a href="/index.html#about" class="menu-btn">Over mij</a></li>
                 </ul>
             </div>
         </nav>
 
-      
+    
+
+        <div class="title_container">
+
+            <h1 class="title">Portfolio</span></h1>
+
+          </div>
+
+        </div>   
+
+        <div class="box">
+
+            <div class="boxFlex">
+
+                <div class="imgBox">
+                    <img src="/Afb/portfolio_v1.png">
+                </div>
+
+                <div class="content">
+
+                    <h2>Review 1</h2>
+
+                    <p>
+                        Dit was mijn eerste versie van de portfolio ik had daar nog niet heel veel maar
+                        dat is logisch als het je 4e week is. Daarop heb ik feedback gekregen tijdens mijn eerste review.
+                        <br></br>
+                        1. Ze vonden het fijn dat ik een ontwerp had gemaakt en was begonnen met mijn realisatie.
+                        <br></br>
+                        2. Ik moest bij elke pagina nog een title element toevoegen. Daarbij moest ik elke pagina een duidelijke naam geven.
+                        <br></br>
+                        3. De javascript code moest ik in een aparte bestand zetten.
+                        <br></br>
+                        4. En vonden ze het fijn dat ik gebruik had gemaakt van github.
+                        <br></br>
+                        De 1e review was prima gegaan, mijn beoordeling was geel.De gekregen
+                        feedback was duidelijk en heb ik direct verwerkt.
+                    </p> 
+                    <a href="http://i457440.hera.fhict.nl/Design portfolio.pdf">Ga naar design<i class="fa fa-fw fa-arrow-right"></i></a>    
+
+                </div>
+
+                </div>
+
+
+                <div class="boxFlex">
+
+                    <div class="imgBox">
+                        <img src="/Afb/portfolio_final.PNG">
+                    </div>
+    
+    
+                    <div class="content">
+    
+                        <h2>Review 2</h2>
+    
+                        <p>
+                            Tijdens deze versie was ik begonnen met het vullen van de portfolio. 
+                            Hier had ik 1 opdracht uitgewerkt. Uiteraard heb ik tijdens de 2e review ook feedback gekregen.
+                            <br></br>
+                            1. ik moest bij mijn opdrachten aangeven wat voor feedback ik heb gekregen en wat ik ermee heb gedaan.
+                            <br></br>
+                            2. Ook moest ik eens kijken of ik een betere manier kon realiseren om vanuit een project terug te gaan naar de leeruitkomst waarin dit project staat.
+                             Omdat alles via de navigatie van het hoofmenu ging.
+                            <br></br>
+                            3. Ten slotte had ik ook een paar kleine bugs die ik moest oplossen.
+                            <br></br>
+                            De 2e review was prima gegaan, mijn beoordeling was geel.De gekregen
+                            feedback was duidelijk en heb ik direct verwerkt.
+
+    
+                        </p>             
+                    </div>
+                </div>
+
+
+                    <div class="boxFlex">
+
+                        <div class="imgBox">
+                            <img src="/Afb/end.jpg">
+                        </div>
+        
+        
+                        <div class="content">
+        
+                            <h2>Review 3</h2>
+        
+                            <p>
+                                En dit was mijn laatste review en daar kreeg ik te horen dat het 
+                                echt nodig was om de rest van mijn portfolio te gaan vullen. Uiteindelijk heb
+                                ik hier weer een gele beoordeling gekregen.
+        
+                            </p>    
+                        </div>
+        
+                        </div>
+    
 
 
 
+                <div class="boxFlex">
+
+                    <div class="content">
+
+                        <h2>Wat heb ik ervan geleerd?</h2>
+
+                        <p>
+                            Ik heb meer ervaring gedaan in Adobe Xd met het desigen van een website.
+
+                        </p>     
+
+                    </div>
+
+
+                    <div class="content">
+
+                        <h2>Hoe maakt mij dat een betere mediadesigner?</h2>
+
+                        <p>
+
+                            Door dit te doen krijg ik meer ervaring en kom ik te weten hoe het zit.
+                        </p>     
+
+                    </div>
+                </div>
+
+        </div>
+
+    
 
 
 
@@ -51,51 +176,15 @@
 
     
     
-    <script>
-
-        const currentLocation = location.href;
-        const menuItem = document.querySelectorAll('a');
-        const menuLength = menuItem.length
-        for(let i = 0; i<menuLength; i++ ){
-            if(menuItem[i].href === currentLocation){
-                menuItem[i].className = "active"
-            }
-        }
-
-        $(document).ready(function(){
-        $(window).scroll(function(){
-            // sticky navbar on scroll script
-            if(this.scrollY > 20){
-                $('.navbar').addClass("sticky");
-            }else{
-                $('.navbar').removeClass("sticky");
-            }
-            
-        });
-    
-        // owl carousel script
-        $('.carousel').owlCarousel({
-            margin: 20,
-            loop: true,
-            autoplayTimeOut: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0:{
-                    items: 1,
-                    nav: false
-                },
-                600:{
-                    items: 2,
-                    nav: false
-                },
-                1000:{
-                    items: 3,
-                    nav: false
-                }
-            }
-        });
-    });
-    </script>
+        <a 
+        action="action"
+        onclick="window.history.go(-1); return false;"
+        type="submit"
+        value="Cancel" id="backUp" href="" style="color: #0078ff;"
+        >
+        
+        <span class="fas fa-arrow-left fa-2x" "></span>
+    </a>
 </body>
 
 <footer>
