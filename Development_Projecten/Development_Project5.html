@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/Projecten.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Portfolio Website</title>
+    <title>Portfolio - Hazem Ben Rouba</title>
     <link rel="shortcut icon" type="image/jpg" href="/Afb/favicon.png"/>
 </head>
 <body>
@@ -32,12 +32,118 @@
                           <a href="/ProfessionalIdentity.html">Professional Identity</a>
                         </div>
                       </div> 
-                    
+                    <li><a href="/index.html#about" class="menu-btn">Over mij</a></li>
                 </ul>
             </div>
         </nav>
 
+        <div class="title_container">
+
+            <h1 class="title">Portfolio</span></h1>
+
+          </div>
+
+        </div>   
       
+        <div class="box">
+            <div class="boxFlex">
+            <div class="imgBox">
+                <img src="/Afb/github.png">      
+            </div>
+
+            <div class="content">
+                <h2>Github link:</h2>
+                <p>
+                    Natuurlijk heb ik gebruik gemaakt van github om te laten zien wat voor stappen ik nou heb gemaakt.
+                </p>  
+                <a href="https://github.com/i457440/Portfolio_Hazem">Ga naar Github<i class="fa fa-fw fa-arrow-right"></i></a>
+
+            </div>
+            </div>
+
+
+                <div class="boxFlex">
+
+                    <div class="imgBox">
+                        <img src="/Afb/portfolio_code.PNG">
+                    </div>
+    
+    
+    
+                    <div class="content">
+                        <h2>Welke code heb ik gebruikt</h2>
+                        <p>
+                            <b>HTML</b><br>
+                            Om de basis te leggen heb ik eerst gewerkt met HTML. Met HTML heb ik 3 paginas gemaakt,
+                            de homepagina, leeruitkomstenpagina en de projecten pagina. Door dat ik een template had gemaakt voor 
+                            de leeruitkomstenpagina en de projectenpagina kon ik deze makkekijk dupliceren, door dat had ik
+                            niet veel tijd nodig om alle paginas de zelfde stijl te geven.<br></br>
+                            <b>CSS</b><br>
+                            Om het naar mijn style te maken heb ik gebruik gemaakt van CSS. Dit heb ik gedaan met 3 CSS bestanden 
+                            voor elke pagina heb ik een andere CSS bestand gebruikt om het gescheiden te houden, zodat het niet met elkaar
+                            in conflict kan raken. <br></br>
+                            <b>Javascript</b><br>
+                            In de website heb ik ook een paar javascript elementen toegevoegd. Onder andere heb ik gebruik gemaakt
+                            van AOS, ook heb ik een active functie gemaakt voor het hoofdmenu, Daarnaast heb ik ook gebruik gemaakt
+                            van de sticky navbar functie op de homepagina. Ten slotte heb ik gebruik gemaakt van textillate.js 
+                            om zo mijn advanced development aan te geven in mijn portfolio.
+                        </p> 
+                     
+                    </div>
+                    </div>
+
+                    <div class="boxFlex">
+
+                        <div class="imgBox">
+                            <img src="/Afb/portfolio_final.PNG">
+                        </div>
+        
+        
+        
+                        <div class="content">
+                            <h2>Feedback</h2>
+                            <p>
+                                Dit was alle feeback die ik heb gekregen tijdens mijn reviews. <br></br>
+                                1. Ze vonden het fijn dat ik een ontwerp had gemaakt en was begonnen met mijn realisatie.
+                                <br></br>
+                                2. Ik moest bij elke pagina nog een title element toevoegen. Daarbij moest ik elke pagina een duidelijke naam geven.
+                                <br></br>
+                                3. De javascript code moest ik in een aparte bestand zetten.
+                                <br></br>
+                                4. Ze vonden het fijn dat ik gebruik had gemaakt van github.
+                                <br></br>
+                                5. Ik moest bij mijn opdrachten aangeven wat voor feedback ik heb gekregen en wat ik ermee heb gedaan.
+                                <br></br>
+                                6. Ook moest ik eens kijken of ik een betere manier kon realiseren om vanuit een project terug te gaan naar de leeruitkomst waarin dit project staat.
+                                 Omdat alles via de navigatie van het hoofmenu ging.
+                                <br></br>
+                                7. Ten slotte had ik ook een paar kleine bugs die ik moest oplossen.
+                                <br></br>
+                                De feedback was duidelijk en heb ik allemaal verwerkt.
+                            </p>    
+                        </div>
+                        </div>
+
+
+
+                <div class="boxFlex">
+                    <div class="content">
+                        <h2>Wat heb ik ervan geleerd?</h2>
+                        <p>
+                            Ik heb geleerd hoe ik veel HTML, CSS en javascript moet toepassen. 
+                        </p>     
+                    </div>
+
+
+                    <div class="content">
+                        <h2>Hoe maakt mij dat een betere mediadesigner?</h2>
+                        <p>
+                           Door dit te doen krijg ik meer ervaring en gaat dit steeds makkelijker.
+                        </p>     
+                    </div>
+             </div>
+        </div>
+
 
 
 
@@ -52,30 +158,16 @@
 
     
     
-    <script>
-
-        const currentLocation = location.href;
-        const menuItem = document.querySelectorAll('a');
-        const menuLength = menuItem.length
-        for(let i = 0; i<menuLength; i++ ){
-            if(menuItem[i].href === currentLocation){
-                menuItem[i].className = "active"
-            }
-        }
-
-        $(document).ready(function(){
-        $(window).scroll(function(){
-            // sticky navbar on scroll script
-            if(this.scrollY > 20){
-                $('.navbar').addClass("sticky");
-            }else{
-                $('.navbar').removeClass("sticky");
-            }
-            
-        });
     
-    });
-    </script>
+        <a 
+        action="action"
+        onclick="window.history.go(-1); return false;"
+        type="submit"
+        value="Cancel" id="backUp" href="" style="color: #0078ff;"
+        >
+        
+        <span class="fas fa-arrow-left fa-2x" "></span>
+    </a>
 </body>
 
 <footer>
