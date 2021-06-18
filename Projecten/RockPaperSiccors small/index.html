@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paper Stone Siccors</title>
+</head>
+<body>
+    <center><h1>Rock Paper Siccors game</h1></center>
+    <div class="body">
+        <input type="button" value="rock" id="rock" onclick="rock()"/>
+        <input type="button" value="Paper" id="paper" onclick="paper()"/>
+        <input type="button" value="Scissors" id="scissors" onclick="siccors()"/>
+        
+        <p id="Uitkomst"></p>
+   
+        <script>
+        var game = ["rock", "paper", "siccors"]
+        
+        function rock() {
+        document.getElementById("Uitkomst").innerHTML = game[Math.floor(Math.random() * 3)];       
+        }
+        function paper() {
+        document.getElementById("Uitkomst").innerHTML = game[Math.floor(Math.random() * 3)];       
+        }
+        function siccors() {
+        document.getElementById("Uitkomst").innerHTML = game[Math.floor(Math.random() * 3)];       
+        }
+        </script>   
+    </div>
+    
+</body>
+</html>
